@@ -97,7 +97,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline-offset: 1px;
 } 
 
 .button:hover {
@@ -137,6 +137,7 @@ ol {
 }
 
 .search-form__fieldset {
+  appearance: none;
   border: none;
 }
 
@@ -151,6 +152,7 @@ ol {
   align-items: center;
   block-size: fit-content;
   position: relative;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -163,8 +165,8 @@ ol {
 }
 
 .search-form__label:hover > .search-form__label-text {
-  border-block-end: 1px solid #fff;
-  cursor: pointer;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .search-form__textfield {
@@ -292,6 +294,10 @@ ol {
   text-decoration: none;
 }
 
+.content__card-link_current {
+  background: #545050;
+}
+
 .content__video-card {
   display: flex;
   align-items: flex-start;
@@ -318,9 +324,12 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
   inline-size: 399px;
   block-size: 34px;
+  margin: 2px;
 }
