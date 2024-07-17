@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/*Стилизация scrollbar начало*/
 * {
   scrollbar-width: thin;
   scrollbar-color: #000 transparent;
@@ -24,8 +23,6 @@
   border-radius: 5px;
   border: 1px solid transparent;
 } 
-
-/*Стилизация scrollbar конец*/
 
 html {
   block-size: 100%;
